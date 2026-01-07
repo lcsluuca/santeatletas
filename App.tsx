@@ -17,6 +17,7 @@ import {
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5531992894777&text=Ol%C3%A1%2C%20venho%20do%20Instagram%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!";
 
 const ASSETS = {
+  logo: "https://i.imgur.com/9xDfRg4.png",
   heroVideo: "https://i.imgur.com/S2mH78y.mp4",
   secondaryVideo: "https://i.imgur.com/Md6EoZd.mp4",
   gallery: [
@@ -51,8 +52,8 @@ const SectionTitle: React.FC<{ title: string; subtitle?: string; light?: boolean
 
 const Navbar: React.FC = () => (
   <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-obsidian/80 backdrop-blur-md border-b border-white/10">
-    <div className="flex items-center gap-2">
-      <div className="w-10 h-10 bg-gold rounded-full flex items-center justify-center font-title text-obsidian italic text-xl">S</div>
+    <div className="flex items-center gap-3">
+      <img src={ASSETS.logo} alt="SANTÊ Logo" className="h-10 md:h-12 w-auto object-contain" />
       <span className="font-title italic tracking-tighter text-xl hidden sm:block">SANTÊ</span>
     </div>
     <a 
@@ -78,7 +79,7 @@ const Hero: React.FC = () => (
     <div className="absolute top-0 left-0 w-full h-full gradient-overlay z-10" />
     
     <div className="relative z-20 container mx-auto px-6 pt-20 pb-12 flex flex-col items-center text-center">
-      <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 px-4 py-1 rounded-full mb-8 animate-float">
+      <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 px-4 py-1 rounded-full mb-8">
         <Star size={16} className="text-gold fill-gold" />
         <span className="text-gold text-xs font-bold uppercase tracking-widest">Metodologia de Elite</span>
       </div>
@@ -131,7 +132,7 @@ const Storytelling: React.FC = () => (
             A <span className="text-white font-semibold italic">Santê</span> nasceu da necessidade de preencher o abismo entre o futebol amador e as exigências das categorias de base dos grandes clubes.
           </p>
           <p>
-            Nosso foco não é o entretenimento, mas sim o <span className="text-gold font-bold">desenvolvimento técnico rigoroso</span>. Aqui, o talento é apenas a matéria-prima; a disciplina e a mentalidade tática são as ferramentas que moldam o futuro profissional.
+            Nosso foco não é o entertainment, mas sim o <span className="text-gold font-bold">desenvolvimento técnico rigoroso</span>. Aqui, o talento é apenas a matéria-prima; a disciplina e a mentalidade tática são as ferramentas que moldam o futuro profissional.
           </p>
           <ul className="space-y-4 pt-4">
             {[
@@ -262,8 +263,8 @@ const Footer: React.FC = () => (
   <footer className="bg-obsidian pt-24 pb-32 border-t border-white/5 text-white/50">
     <div className="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
       <div>
-        <div className="flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center font-title text-obsidian italic text-lg">S</div>
+        <div className="flex items-center gap-3 mb-6">
+          <img src={ASSETS.logo} alt="SANTÊ Footer Logo" className="h-12 w-auto object-contain" />
           <span className="font-title italic tracking-tighter text-xl text-white">SANTÊ</span>
         </div>
         <p className="text-sm font-light leading-relaxed">
