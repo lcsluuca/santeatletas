@@ -29,13 +29,6 @@ const ASSETS = {
     "https://i.imgur.com/5BxhaRI.jpeg",
     "https://i.imgur.com/R4AjkwQ.jpeg",
     "https://i.imgur.com/NghviV7.jpeg",
-  ],
-  logos: [
-    "https://upload.wikimedia.org/wikipedia/pt/d/de/Clube_Atl%C3%A9tico_Mineiro_logo.png",
-    "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cruzeiro_Esporte_Clube_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/a/af/C_Am%C3%A9rica_MG.svg",
-    "https://upload.wikimedia.org/wikipedia/pt/b/b8/CR_Flamengo_2018.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/e/e1/S.E._Palmeiras_logo.svg"
   ]
 };
 
@@ -105,19 +98,6 @@ const Hero: React.FC = () => (
 
     <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 animate-bounce opacity-50">
       <div className="w-[1px] h-12 bg-white/50" />
-    </div>
-  </section>
-);
-
-const SocialProof: React.FC = () => (
-  <section className="bg-obsidian py-10 border-y border-white/5">
-    <div className="container mx-auto px-6">
-      <p className="text-center text-white/40 font-impact uppercase text-xs tracking-[0.3em] mb-8">Nossos atletas em destaque em</p>
-      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-        {ASSETS.logos.map((logo, idx) => (
-          <img key={idx} src={logo} alt="Club Logo" className="h-10 md:h-14 w-auto object-contain" />
-        ))}
-      </div>
     </div>
   </section>
 );
@@ -349,7 +329,6 @@ const App: React.FC = () => {
     <div className="font-body selection:bg-gold selection:text-obsidian">
       <Navbar />
       <Hero />
-      <SocialProof />
       <Storytelling />
       <Vitrine />
       <Pillars />
