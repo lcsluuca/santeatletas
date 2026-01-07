@@ -1,0 +1,8 @@
+{
+  "name": "Santê - Escola de Formação de Atletas",
+  "description": "High-performance football academy landing page with premium sports aesthetic, mobile-first design, and conversion-focused copywriting.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
