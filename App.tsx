@@ -248,7 +248,7 @@ const Footer: React.FC = () => (
           <span className="font-title italic tracking-tighter text-xl text-white">SANTÊ</span>
         </div>
         <p className="text-sm font-light leading-relaxed">
-          Formando atletas de alto rendimento com methodology profissional e foco em resultados reais.
+          Formando atletas de alto rendimento com metodologia profissional e foco em resultados reais.
         </p>
       </div>
       
