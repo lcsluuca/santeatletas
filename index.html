@@ -5,9 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SANTÊ - Escola de Formação de Atletas</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -38,6 +42,7 @@
         }
       }
     </script>
+    
     <style>
       body {
         background-color: #0D0D0D;
@@ -48,9 +53,6 @@
       .gradient-overlay {
         background: linear-gradient(180deg, rgba(13, 13, 13, 0.4) 0%, rgba(13, 13, 13, 0.95) 100%);
       }
-      .text-italic-impact {
-        font-style: italic;
-      }
       .hide-scrollbar::-webkit-scrollbar {
         display: none;
       }
@@ -58,18 +60,27 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+      /* Previne FOUC (Flash of Unstyled Content) */
+      [v-cloak] { display: none; }
     </style>
-  <script type="importmap">
+
+    <!-- Import Map para ESM.sh -->
+    <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
-</head>
+    
+    <!-- Script de Entrada - CRUCIAL para evitar tela branca -->
+    <script type="module" src="./index.tsx"></script>
+  </head>
   <body>
     <div id="root"></div>
   </body>
